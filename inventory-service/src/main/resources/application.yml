@@ -1,0 +1,17 @@
+server:
+    port: 8090
+spring:
+    datasource:
+        password: 9898
+        url: jdbc:postgresql://localhost:5432/turkcell-rentacardb
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+            javax:
+                persistence:
+                    validation:
+                        mode: none
